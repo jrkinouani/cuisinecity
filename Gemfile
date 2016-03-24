@@ -9,6 +9,10 @@ gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
 
+
+gem "fog"
+gem 'rmagick', require: 'RMagick'
+gem 'carrierwave'
 gem 'rails_admin'
 gem 'bootstrap-sass',       '3.2.0.0'
 

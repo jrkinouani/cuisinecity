@@ -8,6 +8,9 @@
         </div>
         <!-- /.row -->
 
+
+
+
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-6 portfolio-item">
@@ -20,13 +23,17 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
             <div class="col-md-6 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="assets/IMG_5011.JPG" alt="">
-                </a>
+             <% @cuisines.each do |cuisine| %>
+               
+             		
+                   <%= image_tag(cuisine.image.url , :class => "img-responsive")%> 
+               
+               <% end %>
                 <h3>
                     <a href="#">Project Two</a>
                 </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+
             </div>
         </div>
         <!-- /.row -->
@@ -124,11 +131,7 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+   
 
 
 
